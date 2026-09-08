@@ -159,13 +159,16 @@ p {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
+  min-width: 0;
   padding: 100px;
   background: linear-gradient(135deg, #fff 0%, #fff8f5 100%);
 }
 
 .page-content {
-  width: min(100%, 1040px);
+  width: 100%;
   max-width: 1040px;
+  min-width: 0;
 }
 
 .eyebrow,
@@ -323,10 +326,17 @@ p {
   }
 
   .page h1 {
-    font-size: clamp(2rem, 10.5vw, 3rem);
+    font-size: 2rem;
+    line-height: 1.1;
   }
 
   .lead {
     font-size: 1rem;
+  }
+
+  .service-list article,
+  .work-grid article,
+  .contact-details > div {
+    min-width: 0;
   }
 }
