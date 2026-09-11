@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #222;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 60px 10%;
+}
+
+#about {
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card button,
+form button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+/* Contact */
+form {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 120px;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+#success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+}
